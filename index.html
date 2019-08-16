@@ -72,9 +72,9 @@
 <!-- 小米闪购start -->
 <div class="seckill"> 
     <div class="seckill-heard"></div>
-    <div class="container">
-        <div class="seckill-nav">
-                <ul>
+    <div id="seckillNav"class="container">
+        <div class="seckill-nav seckill-navfixed">
+                <ul id="tabs">
                     <li class="active"><em>18:00</em><span><em>即将开始<br>距开始 01:25:15</em></span> </li>
                     <li><em>20:00</em><span>即将开始</span></li>
                     <li><em>22:00</em><span>即将开始</span></li>
@@ -82,8 +82,8 @@
                     <li><em>08:00</em><span>明日开始</span></li>
                 </ul>
         </div>
-        <div class="seckill-goods">
-            <ul class="clearfix">
+        <div id="lists" class="seckill-goods">
+            <ul class="clearfix active">
                 <li >
                     <div class="bg">
                         <img src="img/shuihu.jpg" alt="">
@@ -145,13 +145,246 @@
                     </div>
                 </li>
             </ul>
+            <ul class="clearfix">
+               
+                <li>
+                    <div class="bg">
+                        <img src="img/yinxiang.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="" class="name" title="AI音响">小米AI音箱 </a>
+                        <p class="tips">听音乐、语音遥控家电</p>
+                        <p class="price">229.00 <del>299</del> </p>
+                        <a href="" class="btn">登录后抢购</a>
+                        <p class="person">已有7人设置提醒</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <img src="img/lvxiang.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="" class="name" title="旅行箱">小米旅行箱（20英寸）布朗熊限量版 棕色 20寸  </a>
+                        <p class="tips">拉上他回头率飙升</p>
+                        <p class="price">369.00 <del>399</del> </p>
+                        <a href="" class="btn">登录后抢购</a>
+                        <p class="person">已有7人设置提醒</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <img src="img/diannao.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="" class="name" title="电脑">小米笔记本电脑 15.6" i3 4G 128G 深空灰  棕色 20寸  </a>
+                        <p class="tips">拉上他回头率飙升</p>
+                        <p class="price">2899.00 <del>2999</del> </p>
+                        <a href="" class="btn">登录后抢购</a>
+                        <p class="person">已有7人设置提醒</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <img src="img/mitu.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="" class="name" title="故事机">米兔智能故事机 15.6" i3 4G 128G 深空灰  棕色 20寸  </a>
+                        <p class="tips">能说会道，好玩伴</p>
+                        <p class="price">179.00 <del>499</del> </p>
+                        <a href="" class="btn">登录后抢购</a>
+                        <p class="person">已有7人设置提醒</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="clearfix">
+                <li >
+                    <div class="bg">
+                        <img src="img/shuihu.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="" class="name" title="电水壶">米家电水壶 白色 你好呀打榜啦</a>
+                        <p class="tips">一杯水，是一家人的安心</p>
+                        <p class="price">89.00 <del>99</del> </p>
+                        <a href="" class="btn">登录后抢购</a>
+                        <p class="person">已有8390人设置提醒</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <img src="img/yinxiang.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="" class="name" title="AI音响">小米AI音箱 </a>
+                        <p class="tips">听音乐、语音遥控家电</p>
+                        <p class="price">229.00 <del>299</del> </p>
+                        <a href="" class="btn">登录后抢购</a>
+                        <p class="person">已有7人设置提醒</p>
+                    </div>
+                </li>
+             
+                <li>
+                    <div class="bg">
+                        <img src="img/diannao.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="" class="name" title="电脑">小米笔记本电脑 15.6" i3 4G 128G 深空灰  棕色 20寸  </a>
+                        <p class="tips">拉上他回头率飙升</p>
+                        <p class="price">2899.00 <del>2999</del> </p>
+                        <a href="" class="btn">登录后抢购</a>
+                        <p class="person">已有7人设置提醒</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <img src="img/mitu.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="" class="name" title="故事机">米兔智能故事机 15.6" i3 4G 128G 深空灰  棕色 20寸  </a>
+                        <p class="tips">能说会道，好玩伴</p>
+                        <p class="price">179.00 <del>499</del> </p>
+                        <a href="" class="btn">登录后抢购</a>
+                        <p class="person">已有7人设置提醒</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="clearfix">
+                <li >
+                    <div class="bg">
+                        <img src="img/shuihu.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="" class="name" title="电水壶">米家电水壶 白色 你好呀打榜啦</a>
+                        <p class="tips">一杯水，是一家人的安心</p>
+                        <p class="price">89.00 <del>99</del> </p>
+                        <a href="" class="btn">登录后抢购</a>
+                        <p class="person">已有8390人设置提醒</p>
+                    </div>
+                </li>
+               
+                <li>
+                    <div class="bg">
+                        <img src="img/lvxiang.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="" class="name" title="旅行箱">小米旅行箱（20英寸）布朗熊限量版 棕色 20寸  </a>
+                        <p class="tips">拉上他回头率飙升</p>
+                        <p class="price">369.00 <del>399</del> </p>
+                        <a href="" class="btn">登录后抢购</a>
+                        <p class="person">已有7人设置提醒</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="bg">
+                        <img src="img/mitu.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="" class="name" title="故事机">米兔智能故事机 15.6" i3 4G 128G 深空灰  棕色 20寸  </a>
+                        <p class="tips">能说会道，好玩伴</p>
+                        <p class="price">179.00 <del>499</del> </p>
+                        <a href="" class="btn">登录后抢购</a>
+                        <p class="person">已有7人设置提醒</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="clearfix">
+                <li >
+                    <div class="bg">
+                        <img src="img/shuihu.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="" class="name" title="电水壶">米家电水壶 白色 你好呀打榜啦</a>
+                        <p class="tips">一杯水，是一家人的安心</p>
+                        <p class="price">89.00 <del>99</del> </p>
+                        <a href="" class="btn">登录后抢购</a>
+                        <p class="person">已有8390人设置提醒</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <img src="img/yinxiang.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="" class="name" title="AI音响">小米AI音箱 </a>
+                        <p class="tips">听音乐、语音遥控家电</p>
+                        <p class="price">229.00 <del>299</del> </p>
+                        <a href="" class="btn">登录后抢购</a>
+                        <p class="person">已有7人设置提醒</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="bg">
+                        <img src="img/diannao.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="" class="name" title="电脑">小米笔记本电脑 15.6" i3 4G 128G 深空灰  棕色 20寸  </a>
+                        <p class="tips">拉上他回头率飙升</p>
+                        <p class="price">2899.00 <del>2999</del> </p>
+                        <a href="" class="btn">登录后抢购</a>
+                        <p class="person">已有7人设置提醒</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <img src="img/mitu.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="" class="name" title="故事机">米兔智能故事机 15.6" i3 4G 128G 深空灰  棕色 20寸  </a>
+                        <p class="tips">能说会道，好玩伴</p>
+                        <p class="price">179.00 <del>499</del> </p>
+                        <a href="" class="btn">登录后抢购</a>
+                        <p class="person">已有7人设置提醒</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="clearfix">
+                <li >
+                    <div class="bg">
+                        <img src="img/shuihu.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="" class="name" title="电水壶">米家电水壶 白色 你好呀打榜啦</a>
+                        <p class="tips">一杯水，是一家人的安心</p>
+                        <p class="price">89.00 <del>99</del> </p>
+                        <a href="" class="btn">登录后抢购</a>
+                        <p class="person">已有8390人设置提醒</p>
+                    </div>
+                </li>
+               
+                <li>
+                    <div class="bg">
+                        <img src="img/lvxiang.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="" class="name" title="旅行箱">小米旅行箱（20英寸）布朗熊限量版 棕色 20寸  </a>
+                        <p class="tips">拉上他回头率飙升</p>
+                        <p class="price">369.00 <del>399</del> </p>
+                        <a href="" class="btn">登录后抢购</a>
+                        <p class="person">已有7人设置提醒</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <img src="img/diannao.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="" class="name" title="电脑">小米笔记本电脑 15.6" i3 4G 128G 深空灰  棕色 20寸  </a>
+                        <p class="tips">拉上他回头率飙升</p>
+                        <p class="price">2899.00 <del>2999</del> </p>
+                        <a href="" class="btn">登录后抢购</a>
+                        <p class="person">已有7人设置提醒</p>
+                    </div>
+                </li>
+                
+            </ul>
         </div>
         <p class="seckill-notice">*小米秒杀活动规则：<br> 
             1.秒杀商品是否参加活动，以订单结算页显示为准，活动包括但不限于优惠券、赠品、满减、满赠等；<br>
              3.秒杀价不含运费，最终以订单结算页价格为准。<br>
             温馨提示：因可能存在系统缓存、页面更新导致价格变动异常等不确定性情况出现，如您发现活动商品标价或促销信息有异常，请您立即联系小米客服，以便我们及时补正。</p>
     </div>
-  
+  <script src="js/index.js"></script>
 </div>
 <!-- 小米闪购end -->    
 </body>
