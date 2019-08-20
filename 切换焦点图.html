@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>切换焦点图</title>
+    <style>
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear:both;
+        }
+        #left {
+            width: 140px;
+            float: left;
+        }
+        
+        #left img {
+            width: 140px;
+        }
+        #right {
+            margin-left: 10px;
+            width: 440px;
+            float: left;
+        }
+        #right img {
+            width: 440px;
+            display: none;
+        }
+        #right .show {
+            display: inline-block;
+        }
+        #pointer {
+            margin-top: 4px;
+            position: absolute;
+            top:7px;
+            left: 8px;
+        }
+        .box {
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+            <div id="left">
+                    <img src="img/1.jpg" alt="">
+                    <img src="img/2.jpg" alt="">
+                    <img src="img/3.jpg" alt="">
+                </div>
+                <img id="pointer" src="img/pointer.png" alt="">
+                <div id="right">
+                        <img src="img/1.jpg" alt="" class="show">
+                        <img src="img/2.jpg" alt="">
+                        <img src="img/3.jpg" alt="">
+                    </div>
+    </div>
+
+    <script>
+        var leftImgAry = document.getElementById("left").getElementsByTagName("img");
+        var rightmgAry = document.getElementById("right").getElementsByTagName("img");
+         var pointer = document.getElementById("pointer");
+        for(i=0;i<leftImgAry.length;i++){
+            leftImgAry[i].onmousemove = mouseOver;
+            leftImgAry[i].index = i;
+
+        }
+        function mouseOver(){
+            for(var i =0;i<rightmgAry.length;i++){
+                if(i ==this.index){
+                    rightmgAry[i].className = "show";
+                }else{
+                    rightmgAry[i].className = "";
+                }
+                
+            }
+        }
+        //移动
+        var Top =164;
+        var nowTop = 0;
+        function moveTo(){
+
+        }
+
+
+
+    </script>
+</body>
+</html>
