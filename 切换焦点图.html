@@ -62,6 +62,7 @@
         var leftImgAry = document.getElementById("left").getElementsByTagName("img");
         var rightmgAry = document.getElementById("right").getElementsByTagName("img");
          var pointer = document.getElementById("pointer");
+         var TopAry = [7,90,172];
         for(i=0;i<leftImgAry.length;i++){
             leftImgAry[i].onmousemove = mouseOver;
             leftImgAry[i].index = i;
@@ -70,17 +71,56 @@
         function mouseOver(){
             for(var i =0;i<rightmgAry.length;i++){
                 if(i ==this.index){
+                    //右侧图片显示
                     rightmgAry[i].className = "show";
-                }else{
-                    rightmgAry[i].className = "";
+                    //pointer 移动
+                    Top = TopAry[i];
+                    nowTop = pointer.offsetTop;
+                    if(moveLoop == null){
+                        moveLoop = setInterval(moveTo,10);
+                    }     
+
                 }
-                
+                else rightmgAry[i].className = "";      
             }
         }
+        var moveLoop = null;//setInterval(moveTo,100);
         //移动
-        var Top =164;
-        var nowTop = 0;
+        var Top =172;
+        var nowTop = 7;
+        var speed = 4;
         function moveTo(){
+          //  从上往下移动
+            if(nowTop < Top){
+                nowTop += speed;
+                if(nowTop >= Top){
+                    nowTop = Top;
+                    clearInterval(moveLoop);
+                    moveLoop =null;
+                    
+                }
+              // pointer.style.top =  nowTop + "px";
+
+            }
+       //  从下往上移动
+         if(nowTop > Top){
+                nowTop -= speed;
+                if(nowTop <= Top){
+                    nowTop = Top;
+                    clearInterval(moveLoop);
+                    moveLoop =null;
+                    
+                }
+             //  pointer.style.top =  nowTop + "px";
+
+            }
+      
+            if(nowTop == Top){
+                clearInterval(moveLoop);
+                moveLoop =null;
+               //pointer.style.top =  nowTop + "px";
+            }
+            pointer.style.top =  nowTop + "px";
 
         }
 
